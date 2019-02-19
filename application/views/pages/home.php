@@ -290,7 +290,7 @@
     </section>  -->
 
     <!-- Activities --> 
-    <section id="activities p-0 m-0">
+    <section id="activities">
         <div id="carouselpic" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselpic" data-slide-to="0" class="active"></li>

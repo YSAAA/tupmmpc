@@ -181,7 +181,7 @@
                               </div>
                             </div>
                             <div class="card-footer bg-info p-1">
-                              <small class="text-white ml-2">Accepted</small>
+                              <small class="text-white ml-2">Approved</small>
                               <i class="fas fa-chart-bar text-white float-right mr-2 mt-1"></i>
                             </div>
                           </div>
@@ -215,24 +215,7 @@
                                   <div class="row">
                                     <div class="col-6">
                                       <h6 id="dashboardPayments" class="mb-0 text-success" style="font-size: 2rem">&#8369;65,250</h6>
-                                      <footer class="text-muted" style="font-size: 0.8rem">Total Loan <cite>Payments</cite></footer>
-                                    </div>
-                                    <div class="col-6">
-                                      <i class="far fa-arrow-alt-circle-right text-secondary float-right" style="font-size: 2.5rem"></i>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row mb-3">
-                            <div class="col-md-12">
-                              <div class="card rounded shadow-sm">
-                                <div class="card-body p-3">
-                                  <div class="row">
-                                    <div class="col-6">
-                                      <h6 id="dashboardMissedPayments" class="mb-0 text-danger" style="font-size: 2rem">&#8369;27,500</h6>
-                                      <footer class="text-muted" style="font-size: 0.8rem">Total Missed <cite>Payments</cite></footer>
+                                      <footer class="text-muted" style="font-size: 0.8rem">Total Loan <cite>Payments</cite>as of * Date *</footer>
                                     </div>
                                     <div class="col-6">
                                       <i class="far fa-arrow-alt-circle-right text-secondary float-right" style="font-size: 2.5rem"></i>
@@ -354,6 +337,23 @@
                           </div>
                         </div>
                       </div>
+                      <div class="row mb-4">
+                            <div class="col-md-12">
+                              <div class="card rounded shadow-sm">
+                                <div class="card-body p-3">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <h6 id="dashboardMissedPayments" class="mb-0 text-warning" style="font-size: 2rem">&#8369;82,900</h6>
+                                      <footer class="text-muted" style="font-size: 0.8rem">My <cite>Share Capital</cite></footer>
+                                    </div>
+                                    <div class="col-6">
+                                      <i class="far fa-arrow-alt-circle-right text-secondary float-right" style="font-size: 2.5rem"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                       <div class="row">
                         <div class="col-md-12">
                           <div class="card rounded shadow-sm">
@@ -374,13 +374,430 @@
                     </div>
                   </div>
                   <div id="creditDash">
-                    CREDIT OFFICER DASHBOARD
+                    <div class="card-body card-body-mh">
+                      <div class="row mb-3">
+                        <div class="col-md-6">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <div class="row">
+                                <div class="col-6">
+                                  <h6 id="dashboardTotalMembers" class="mb-0 text-dark" style="font-size: 2rem"><?php echo $members; ?></h6>
+                                  <footer class="text-muted" style="font-size: 0.8rem">Total <cite>Members</cite></footer>
+                                </div>
+                                <div class="col-6">
+                                  <i class="far fa-user-circle text-secondary float-right" style="font-size: 2.5rem"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <div class="row">
+                                <div class="col-6">
+                                  <h6 id="dashboardLoansApplied" class="mb-0 text-dark" style="font-size: 2rem"><?php echo $loansApplied; ?></h6>
+                                  <footer class="text-muted" style="font-size: 0.8rem">Loans <cite>Applied</cite></footer>
+                                </div>
+                                <div class="col-6">
+                                  <i class="far fa-file-alt text-secondary float-right" style="font-size: 2.5rem"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-md-4">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <div class="row">
+                                <div class="col-6">
+                                  <h6 id="dashboardPendingLoans" class="mb-0 text-warning" style="font-size: 2rem"><?php echo $pendingLoans; ?></h6>
+                                  <footer class="text-muted" style="font-size: 0.8rem">Loans <cite>Pending</cite></footer>
+                                </div>
+                                <div class="col-6">
+                                  <i class="far fa-pause-circle text-secondary float-right" style="font-size: 2.5rem"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer bg-warning p-1">
+                              <small class="text-white ml-2">Pending</small>
+                              <i class="fas fa-chart-bar text-white float-right mr-2 mt-1"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <div class="row">
+                                <div class="col-6">
+                                  <h6 id="dashboardApprovedLoans" class="mb-0 text-info" style="font-size: 2rem"><?php echo $approvedLoans; ?></h6>
+                                  <footer class="text-muted" style="font-size: 0.8rem">Loans <cite>Approved</cite></footer>
+                                </div>
+                                <div class="col-6">
+                                  <i class="far fa-check-circle text-secondary float-right" style="font-size: 2.5rem"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer bg-info p-1">
+                              <small class="text-white ml-2">Approved</small>
+                              <i class="fas fa-chart-bar text-white float-right mr-2 mt-1"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <div class="row">
+                                <div class="col-6">
+                                  <h6 id="dashboardActiveLoans" class="mb-0 text-primary" style="font-size: 2rem"><?php echo $ongoingLoans; ?></h6>
+                                  <footer class="text-muted" style="font-size: 0.8rem">Loans <cite>Active</cite></footer>
+                                </div>
+                                <div class="col-6">
+                                  <i class="far fa-arrow-alt-circle-right text-secondary float-right" style="font-size: 2.5rem"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer bg-primary p-1">
+                              <small class="text-white ml-2">On-going</small>
+                              <i class="fas fa-chart-bar text-white float-right mr-2 mt-1"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="row mb-3">
+                            <div class="col-md-12">
+                              <div class="card rounded shadow-sm">
+                                <div class="card-body p-3">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <h6 id="dashboardPayments" class="mb-0 text-success" style="font-size: 2rem">&#8369;65,250</h6>
+                                      <footer class="text-muted" style="font-size: 0.8rem">Total Loan <cite>Payments</cite> as of * Date *</footer>
+                                    </div>
+                                    <div class="col-6">
+                                      <i class="far fa-arrow-alt-circle-right text-secondary float-right" style="font-size: 2.5rem"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="card rounded shadow-sm">
+                                <div class="card-body p-3">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <h6 id="dashboardMissedPayments" class="mb-0 text-warning" style="font-size: 2rem">&#8369;82,900</h6>
+                                      <footer class="text-muted" style="font-size: 0.8rem">Total <cite>Share Capital</cite></footer>
+                                    </div>
+                                    <div class="col-6">
+                                      <i class="far fa-arrow-alt-circle-right text-secondary float-right" style="font-size: 2.5rem"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <h6 class="mb-0 text-primary" style="font-size: 1.2rem">Monthly Loan Track</h6>
+                              <footer class="text-muted" style="font-size: 0.8rem"><cite>in 2018-2019</cite></footer>
+                              <canvas id="line-chart"></canvas>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div id="managerDash">
-                    MANAGER DASHBOARD
+                    <div class="card-body card-body-mh">
+                      <div class="row mb-3">
+                        <div class="col-md-6">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <div class="row">
+                                <div class="col-6">
+                                  <h6 id="dashboardTotalMembers" class="mb-0 text-dark" style="font-size: 2rem"><?php echo $members; ?></h6>
+                                  <footer class="text-muted" style="font-size: 0.8rem">Total <cite>Members</cite></footer>
+                                </div>
+                                <div class="col-6">
+                                  <i class="far fa-user-circle text-secondary float-right" style="font-size: 2.5rem"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <div class="row">
+                                <div class="col-6">
+                                  <h6 id="dashboardLoansApplied" class="mb-0 text-dark" style="font-size: 2rem"><?php echo $loansApplied; ?></h6>
+                                  <footer class="text-muted" style="font-size: 0.8rem">Loans <cite>Applied</cite></footer>
+                                </div>
+                                <div class="col-6">
+                                  <i class="far fa-file-alt text-secondary float-right" style="font-size: 2.5rem"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-md-4">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <div class="row">
+                                <div class="col-6">
+                                  <h6 id="dashboardPendingLoans" class="mb-0 text-warning" style="font-size: 2rem"><?php echo $pendingLoans; ?></h6>
+                                  <footer class="text-muted" style="font-size: 0.8rem">Loans <cite>Pending</cite></footer>
+                                </div>
+                                <div class="col-6">
+                                  <i class="far fa-pause-circle text-secondary float-right" style="font-size: 2.5rem"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer bg-warning p-1">
+                              <small class="text-white ml-2">Pending</small>
+                              <i class="fas fa-chart-bar text-white float-right mr-2 mt-1"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <div class="row">
+                                <div class="col-6">
+                                  <h6 id="dashboardApprovedLoans" class="mb-0 text-info" style="font-size: 2rem"><?php echo $approvedLoans; ?></h6>
+                                  <footer class="text-muted" style="font-size: 0.8rem">Loans <cite>Approved</cite></footer>
+                                </div>
+                                <div class="col-6">
+                                  <i class="far fa-check-circle text-secondary float-right" style="font-size: 2.5rem"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer bg-info p-1">
+                              <small class="text-white ml-2">Approved</small>
+                              <i class="fas fa-chart-bar text-white float-right mr-2 mt-1"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <div class="row">
+                                <div class="col-6">
+                                  <h6 id="dashboardActiveLoans" class="mb-0 text-primary" style="font-size: 2rem"><?php echo $ongoingLoans; ?></h6>
+                                  <footer class="text-muted" style="font-size: 0.8rem">Loans <cite>Active</cite></footer>
+                                </div>
+                                <div class="col-6">
+                                  <i class="far fa-arrow-alt-circle-right text-secondary float-right" style="font-size: 2.5rem"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer bg-primary p-1">
+                              <small class="text-white ml-2">On-going</small>
+                              <i class="fas fa-chart-bar text-white float-right mr-2 mt-1"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="row mb-3">
+                            <div class="col-md-12">
+                              <div class="card rounded shadow-sm">
+                                <div class="card-body p-3">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <h6 id="dashboardPayments" class="mb-0 text-success" style="font-size: 2rem">&#8369;65,250</h6>
+                                      <footer class="text-muted" style="font-size: 0.8rem">Total Loan <cite>Payments</cite> as of * Date *</footer>
+                                    </div>
+                                    <div class="col-6">
+                                      <i class="far fa-arrow-alt-circle-right text-secondary float-right" style="font-size: 2.5rem"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="card rounded shadow-sm">
+                                <div class="card-body p-3">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <h6 id="dashboardMissedPayments" class="mb-0 text-warning" style="font-size: 2rem">&#8369;82,900</h6>
+                                      <footer class="text-muted" style="font-size: 0.8rem">Total <cite>Share Capital</cite></footer>
+                                    </div>
+                                    <div class="col-6">
+                                      <i class="far fa-arrow-alt-circle-right text-secondary float-right" style="font-size: 2.5rem"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <h6 class="mb-0 text-primary" style="font-size: 1.2rem">Monthly Loan Track</h6>
+                              <footer class="text-muted" style="font-size: 0.8rem"><cite>in 2018-2019</cite></footer>
+                              <canvas id="line-chart"></canvas>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div id="treasurerDash">
-                    TREASURER DASHBOARD
+                    <div class="card-body card-body-mh">
+                      <div class="row mb-3">
+                        <div class="col-md-6">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <div class="row">
+                                <div class="col-6">
+                                  <h6 id="dashboardTotalMembers" class="mb-0 text-dark" style="font-size: 2rem"><?php echo $members; ?></h6>
+                                  <footer class="text-muted" style="font-size: 0.8rem">Total <cite>Members</cite></footer>
+                                </div>
+                                <div class="col-6">
+                                  <i class="far fa-user-circle text-secondary float-right" style="font-size: 2.5rem"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <div class="row">
+                                <div class="col-6">
+                                  <h6 id="dashboardLoansApplied" class="mb-0 text-dark" style="font-size: 2rem"><?php echo $loansApplied; ?></h6>
+                                  <footer class="text-muted" style="font-size: 0.8rem">Loans <cite>Applied</cite></footer>
+                                </div>
+                                <div class="col-6">
+                                  <i class="far fa-file-alt text-secondary float-right" style="font-size: 2.5rem"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-md-4">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <div class="row">
+                                <div class="col-6">
+                                  <h6 id="dashboardPendingLoans" class="mb-0 text-warning" style="font-size: 2rem"><?php echo $pendingLoans; ?></h6>
+                                  <footer class="text-muted" style="font-size: 0.8rem">Loans <cite>Pending</cite></footer>
+                                </div>
+                                <div class="col-6">
+                                  <i class="far fa-pause-circle text-secondary float-right" style="font-size: 2.5rem"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer bg-warning p-1">
+                              <small class="text-white ml-2">Pending</small>
+                              <i class="fas fa-chart-bar text-white float-right mr-2 mt-1"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <div class="row">
+                                <div class="col-6">
+                                  <h6 id="dashboardApprovedLoans" class="mb-0 text-info" style="font-size: 2rem"><?php echo $approvedLoans; ?></h6>
+                                  <footer class="text-muted" style="font-size: 0.8rem">Loans <cite>Approved</cite></footer>
+                                </div>
+                                <div class="col-6">
+                                  <i class="far fa-check-circle text-secondary float-right" style="font-size: 2.5rem"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer bg-info p-1">
+                              <small class="text-white ml-2">Approved</small>
+                              <i class="fas fa-chart-bar text-white float-right mr-2 mt-1"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <div class="row">
+                                <div class="col-6">
+                                  <h6 id="dashboardActiveLoans" class="mb-0 text-primary" style="font-size: 2rem"><?php echo $ongoingLoans; ?></h6>
+                                  <footer class="text-muted" style="font-size: 0.8rem">Loans <cite>Active</cite></footer>
+                                </div>
+                                <div class="col-6">
+                                  <i class="far fa-arrow-alt-circle-right text-secondary float-right" style="font-size: 2.5rem"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer bg-primary p-1">
+                              <small class="text-white ml-2">On-going</small>
+                              <i class="fas fa-chart-bar text-white float-right mr-2 mt-1"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="row mb-3">
+                            <div class="col-md-12">
+                              <div class="card rounded shadow-sm">
+                                <div class="card-body p-3">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <h6 id="dashboardPayments" class="mb-0 text-success" style="font-size: 2rem">&#8369;65,250</h6>
+                                      <footer class="text-muted" style="font-size: 0.8rem">Total Loan <cite>Payments</cite> as of * Date *</footer>
+                                    </div>
+                                    <div class="col-6">
+                                      <i class="far fa-arrow-alt-circle-right text-secondary float-right" style="font-size: 2.5rem"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="card rounded shadow-sm">
+                                <div class="card-body p-3">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <h6 id="dashboardMissedPayments" class="mb-0 text-warning" style="font-size: 2rem">&#8369;82,900</h6>
+                                      <footer class="text-muted" style="font-size: 0.8rem">Total <cite>Share Capital</cite></footer>
+                                    </div>
+                                    <div class="col-6">
+                                      <i class="far fa-arrow-alt-circle-right text-secondary float-right" style="font-size: 2.5rem"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="card rounded shadow-sm">
+                            <div class="card-body p-3">
+                              <h6 class="mb-0 text-primary" style="font-size: 1.2rem">Monthly Loan Track</h6>
+                              <footer class="text-muted" style="font-size: 0.8rem"><cite>in 2018-2019</cite></footer>
+                              <canvas id="line-chart"></canvas>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="card-footer" style="min-height: 60px"></div>
                 </div>
